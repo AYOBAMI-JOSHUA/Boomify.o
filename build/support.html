@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomify</title>
+    <link rel="icon" href="favicon/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+    
+<body class="bg-black dark:bg-black">
+    <header class="text-white sticky top-0 z-10 bg-blue-700 dark:to-blue-800">
+        <section class="max-w-6xl mx-auto p-2 md:py-5 px-3 flex justify-between items-center">
+            <h1 class="text-base sm:text-3xl font-medium">
+                <a href="index.html" class="flex flex-row">
+                    <img alt="logo3" src="img/logoo.png">
+                    oomify<span class="text-xs">®</span>
+                </a>
+            </h1>
+            
+            <div class="flex flex-row gap-8">
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                    <!-- &#9776; -->
+                    <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+                </button>
+                <button class="hidden sm:block bg-white font-bold text-black p-2 rounded-3xl border border-slate-900 dark:border-none"><a class="flex flex-row" href="index.html#premium">Explore Premium</a></button>
+                <button class="hidden sm:block bg-gray-950 text-center items-center active:bg-gray-950 font-bold text-white p-2 w-32 rounded-3xl border border-slate-950 dark:border-non"><a class="flex flex-row" href="download.html">Install App</a></button>
+            </div>
+        </section>
+
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-4xl flex-col justify-center origin-top animate-open-menu hidden">
+            <div class="ml-32">
+                <button class="ml-64 text-5xl font-bold self-end">
+                    &times;
+                </button>
+            </div>
+            <nav class="flex flex-col min-h-screen items-center py-8 ml-8" aria-label="mobile">
+                <a href="#premium" class="w-full py-6 hover:opacity-90">
+                    PREMIUM
+                </a>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="individual.html" class="w-full hover:opacity-90 font-bold">Premium Individual</a>
+                    </p>
+                </div>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="student.html" class="w-full hover:opacity-90 font-bold">Premium Student</a>
+                    </p>
+                </div>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="family.html" class="w-full hover:opacity-90 font-bold">Premium Family</a>
+                    </p>
+                </div>
+                <a href="support.html" class="w-full py-6 hover:opacity-90">SUPPORT</a>
+                <a href="download.html" class="w-full py-6 hover:opacity-90 ml-5 mr-5">DOWNDLOAD</a>
+                <a href="#boomify" class="w-full py-6 hover:opacity-90">ACCOUNT</a>
+                <a href="#logout" class="w-full py-6 hover:opacity-90">LOG OUT</a>
+                <h1 class="md:hidden text-base font-medium ml-64">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" src="img/logoo.png">
+                        oomify limited <span class="text-xs">.....®</span>
+                    </a>
+                </h1>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="hero" style="background-image: url(icon/support.png); background-size: cover;" class="p-6 items-center scroll-m-40 dark:bg-gradient-to-b from-blue-700 via-black to-black widescreen:section-min-height tallscreen:section-min-height">
+            <article class="hidden sm:block m-3 ml-64">
+                <h1 class="text-sm sm:text-xl font-semibold text-slate-600 dark:text-slate-400">Boomify Support</h1>
+                <p class="max-w-screen-sm mt-3 text-2xl sm:text-5xl font-bold sm:text-5sl text-white">
+                    How can we help you?
+                </p>
+                
+            </article>
+            <!-- mobile -->
+            <article class="md:hidden">
+                <h1 class="text-base font-semibold text-slate-600 dark:text-slate-400">Boomify Support</h1>
+                <p class="max-w-screen-sm mt-3 text-3xl font-bold text-white">
+                    How can we help you?
+                </p>
+                
+            </article>
+        </section>
+
+        <section id="features" style="background-image: url(icon/support.png); background-size: cover;" class="justify-center p-6 items-center scroll-m-40 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="hidden sm:block text-2xl font-bold text-white ml-64"><a href="#hero" class="flex flex-row"><img src="logo/logo3.png" alt="person">  Hello, Joshua Ayobami</a></h2>
+            <h2 class="md:hidden text-xl font-bold text-white"><a href="#hero" class="flex flex-row"><img src="logo/logo3.png" alt="person">  Hello, Joshua Ayobami</a></h2>
+
+            <form class="hidden sm:block ml-64 my-8">
+                <input class="w-2/3 p-3 text-xl" type="email" placeholder="🔍  Search">
+            </form>
+            <form class="md:hidden my-8">
+                <input class="w-full rounded p-3 text-base" type="email" placeholder="🔍  Search">
+            </form>
+
+            <article class="hidden sm:block my-8 ml-64 bg-gray-950 w-1/2 rounded-xl">
+                <form class="md:hidden my-8 w-full">
+                    <input class="w-28 rounded p-3 text-base" type="email" placeholder="🔍  Search">
+                </form>
+                <details class="my-6 mt-5 text-white ml-5">
+                    <summary class="flex flex-row font-semibold text-2xl"><img class="w-8 h-3" src="icon/debitcard.png" alt="">Payments and billing</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Recomended topics</summary>
+                                <ol>
+                                    <li><a href="#privacy">Price update</a></li>
+                                    <li><a href="#privacy">Failed Payment help</a></li>
+                                    <li><a href="#privacy">Payment mathods</a></li>
+                                    <li><a href="#privacy">Update payments details</a></li>
+                                    <li><a href="#privacy">Cancel payment plans</a></li>
+                                    <li><a href="#privacy">Payment for Duo plan</a></li>
+                                    <li><a href="#privacy">Payment for Family plan</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Manage Payments</summary>
+                                <ol>
+                                    <li><a href="#privacy">Update payments details</a></li>
+                                    <li><a href="#privacy">Payment for Duo plan</a></li>
+                                    <li><a href="#privacy">Payment for Family plan</a></li>
+                                    <li><a href="#privacy">Cancel Premium plans</a></li>
+                                    <li><a href="#privacy">View your recipts</a></li>
+                                    <li><a href="#privacy">Billing date</a></li>
+                                    <li><a href="#privacy">why cant i get premium in the <br> app?</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Payment Method</summary>
+                                <ol>
+                                    <li><a href="#privacy">Payment Method</a></li>
+                                    <li><a href="#privacy">Paying for Boomify wuth google play billing</a></li>
+                                </ol>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Charge Help</summary>
+                                <ol>
+                                    <li><a href="#privacy">Chagered twice</a></li>
+                                    <li><a href="#privacy">Price update</a></li>
+                                    <li><a href="#privacy">Chagered to much</a></li>
+                                    <li><a href="#privacy">contact us</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                    </ol>
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+                
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold sm:text-2xl"><img class="w-8 h-3" src="logo/logo3.png" alt=""> Manage your accounts</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Logging in</summary>
+                                <ol>
+                                    <li><a href="#privacy">Can't log in</a></li>
+                                    <li><a href="#privacy">Can't reset password</a></li>
+                                    <li><a href="#privacy">Facebook login help</a></li>
+                                    <li><a href="#privacy">Apple login help</a></li>
+                                    <li><a href="#privacy">Google login help</a></li>
+                                    <li><a href="#privacy">Samsung login help</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Profile Help</summary>
+                                <ol>
+                                    <li><a href="#privacy">Your Boomify profile</a></li>
+                                    <li><a href="#privacy">Profile picture</a></li>
+                                    <li><a href="#privacy">username</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Account Settings</summary>
+                                <ol>
+                                    <li><a href="#privacy">Change email adress</a></li>
+                                    <li><a href="#privacy">Notification settings</a></li>
+                                    <li><a href="#privacy">How to log out</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Security</summary>
+                                <ol>
+                                    <li><a href="#privacy">Protect your account</a></li>
+                                    <li><a href="#privacy">Abuse detection</a></li>
+                                    <li><a href="#privacy">Contact us</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                    </ol>
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold sm:text-2xl"><img class="w-8 h-3" src="icon/menu.png" alt=""> Premium plans</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Available plans</summary>
+                                <ol>
+                                    <li><a href="#privacy">premium Individual plan</a></li>
+                                    <li><a href="#privacy">premium student plan</a></li>
+                                    <li><a href="#privacy">premium Duo plan</a></li>
+                                    <li><a href="#privacy">premium Family plan</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Plan Settings</summary>
+                                <ol>
+                                    <li><a href="#privacy">Protect your account</a></li>
+                                    <li><a href="#privacy">Abuse detection</a></li>
+                                    <li><a href="#privacy">Contact us</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Premium Duo</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Premium Family</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Premium Students</summary>
+                               
+                            </details>
+                        </li>
+                    </ol>
+                   
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold sm:text-2xl"><img class="w-8 h-3" src="icon/grid.png" alt="">  In-App features</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Getting started</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">App settings</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Troulbleshooting</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Playlists</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Features</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Social Features</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Podcast</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Audiobooks</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Live events</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Listening Privacy</summary>
+                               
+                            </details>
+                        </li>
+                    </ol>
+                    
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold sm:text-2xl"><img class="w-8 h-3" src="icon/device.png" alt="">  Devices and Troubleshooting</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Speakers</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Smart watches</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">TVs</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Gaming</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Cars</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold sm:text-2xl">Voice assistants</summary>
+                               
+                            </details>
+                        </li>
+                    </ol>
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold sm:text-2xl"><img class="w-8 h-3" src="icon/safety.png" alt="">  Safety and Privacy</summary>
+                    <ol>
+                        <li><a href="#privacy">Data rights and privacy settings</a></li>
+                        <li><a href="#privacy">Understanding my data</a></li>
+                    </ol>
+                    
+                </details>
+            </article>
+            <!-- mobile -->
+            <article class="md:hidden my-8 bg-gray-950 w-full rounded-xl">
+                <details class="my-6 mt-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold"><img class="w-5 h-3" src="icon/debitcard.png" alt="">Payments and billing</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold ">Recomended topics</summary>
+                                <ol>
+                                    <li><a href="#privacy">Price update</a></li>
+                                    <li><a href="#privacy">Failed Payment help</a></li>
+                                    <li><a href="#privacy">Payment mathods</a></li>
+                                    <li><a href="#privacy">Update payments details</a></li>
+                                    <li><a href="#privacy">Cancel payment plans</a></li>
+                                    <li><a href="#privacy">Payment for Duo plan</a></li>
+                                    <li><a href="#privacy">Payment for Family plan</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Manage Payments</summary>
+                                <ol>
+                                    <li><a href="#privacy">Update payments details</a></li>
+                                    <li><a href="#privacy">Payment for Duo plan</a></li>
+                                    <li><a href="#privacy">Payment for Family plan</a></li>
+                                    <li><a href="#privacy">Cancel Premium plans</a></li>
+                                    <li><a href="#privacy">View your recipts</a></li>
+                                    <li><a href="#privacy">Billing date</a></li>
+                                    <li><a href="#privacy">why cant i get premium in the <br> app?</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Payment Method</summary>
+                                <ol>
+                                    <li><a href="#privacy">Payment Method</a></li>
+                                    <li><a href="#privacy">Paying for Boomify wuth google play billing</a></li>
+                                </ol>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Charge Help</summary>
+                                <ol>
+                                    <li><a href="#privacy">Chagered twice</a></li>
+                                    <li><a href="#privacy">Price update</a></li>
+                                    <li><a href="#privacy">Chagered to much</a></li>
+                                    <li><a href="#privacy">contact us</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                    </ol>
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+                
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold"><img class="w-5 h-3" src="logo/logo3.png" alt="">  Manage your accounts</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Logging in</summary>
+                                <ol>
+                                    <li><a href="#privacy">Can't log in</a></li>
+                                    <li><a href="#privacy">Can't reset password</a></li>
+                                    <li><a href="#privacy">Facebook login help</a></li>
+                                    <li><a href="#privacy">Apple login help</a></li>
+                                    <li><a href="#privacy">Google login help</a></li>
+                                    <li><a href="#privacy">Samsung login help</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Profile Help</summary>
+                                <ol>
+                                    <li><a href="#privacy">Your Boomify profile</a></li>
+                                    <li><a href="#privacy">Profile picture</a></li>
+                                    <li><a href="#privacy">username</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Account Settings</summary>
+                                <ol>
+                                    <li><a href="#privacy">Change email adress</a></li>
+                                    <li><a href="#privacy">Notification settings</a></li>
+                                    <li><a href="#privacy">How to log out</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Security</summary>
+                                <ol>
+                                    <li><a href="#privacy">Protect your account</a></li>
+                                    <li><a href="#privacy">Abuse detection</a></li>
+                                    <li><a href="#privacy">Contact us</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                    </ol>
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold"><img class="w-5 h-3" src="icon/menu.png" alt=""> Premium plans</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Available plans</summary>
+                                <ol>
+                                    <li><a href="#privacy">premium Individual plan</a></li>
+                                    <li><a href="#privacy">premium student plan</a></li>
+                                    <li><a href="#privacy">premium Duo plan</a></li>
+                                    <li><a href="#privacy">premium Family plan</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Plan Settings</summary>
+                                <ol>
+                                    <li><a href="#privacy">Protect your account</a></li>
+                                    <li><a href="#privacy">Abuse detection</a></li>
+                                    <li><a href="#privacy">Contact us</a></li>
+                                </ol>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Premium Duo</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Premium Family</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Premium Students</summary>
+                               
+                            </details>
+                        </li>
+                    </ol>
+                   
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold"><img class="w-5 h-3" src="icon/grid.png" alt="">  In-App features</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Getting started</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">App settings</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Troulbleshooting</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Playlists</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Features</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Social Features</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Podcast</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Audiobooks</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Live events</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Listening Privacy</summary>
+                               
+                            </details>
+                        </li>
+                    </ol>
+                    
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold"><img class="w-5 h-3" src="icon/device.png" alt="">  Devices and Troubleshooting</summary>
+                    <ol>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Speakers</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Smart watches</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">TVs</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Gaming</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Cars</summary>
+                               
+                            </details>
+                        </li>
+                        <li>
+                            <details class="my-5 text-white ml-5">
+                                <summary class="text-sm font-semibold">Voice assistants</summary>
+                               
+                            </details>
+                        </li>
+                    </ol>
+                </details>
+
+                <hr class="mx-auto bg-black dark:bg-white w-full ml-5">
+
+                <details class="my-5 text-white ml-5">
+                    <summary class="flex flex-row text-sm font-semibold"><img class="w-5 h-3" src="icon/safety.png" alt="">  Safety and Privacy</summary>
+                    <ol>
+                        <li><a href="#privacy">Data rights and privacy settings</a></li>
+                        <li><a href="#privacy">Understanding my data</a></li>
+                    </ol>
+                    
+                </details>
+            </article>
+        </section>
+
+        <section id="features" class="bg-gray-950 justify-center sm:flex-row p-2 sm:p-6 items-center sm:gap-x-32 scroll-m-40 widescreen:section-min-height tallscreen:section-min-height">
+            <article class="hidden sm:block m-3 ml-64">
+                <h3 class="hidden sm:block text-2xl font-bold mb-5 text-white mt-16 ml-5">Quick help</h3>
+
+                <details class="my-8 text-white ml-5">
+                    <summary class="text-sm">Can't log in</summary>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        If you don't remember your password, use password reset.
+                    </p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        If you don't remember your email or username, go to <a class="underline" href="#password reset"> password reset</a> and <br>
+                        enter possible email addresses you own. We will only send the reset email to a <br>
+                        Boomify registered email address.
+                    </p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        Note: There are a few ways to sign up, e.g. with email, phone number, <br>
+                         Facebook, Apple, or Google. <a class="underline" href="#login">Try logging in</a> with these to find your account
+                    </p>
+                </details>
+                
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm">Failed payment help</summary>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        Make sure your payment method has sufficient funds, and is:
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Registered in the same country to your Boomify account.</li>
+                        <li>&bull; Not expired or canceled.</li>
+                        <li>&bull; Enabled for foreign, secure online, and recurring purchases. Look for <br>
+                         these settings in your bank’s mobile app</li>
+                    </ol>
+
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        Also, make sure your bank or payment provider has your correct details. They <br>
+                        may need to verify your identity for security, e.g. with a password, PIN, <br>
+                        fingerprint, or code sent to your device.
+                    </p>
+
+                    <p class="max-w-6xl text-xs sm:text-2xl mt-4 sm:text-left text-white dark:text-white">Still not working?</p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Try entering your payment details again using a private/incognito <br> window.</li>
+                        <li>&bull; Try a different payment method.</li>
+                        <li>&bull; It might just be a temporary connection issue, so wait a few hours and try <br>again.</li>
+                        <li>&bull; Get in touch with your payment provider.</li>
+                    </ol>
+
+                    <p class="max-w-6xl text-xs sm:text-2xl mt-4 sm:text-left text-white dark:text-white">Regular payment failed?</p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        If a monthly payment fails, you won't immediately lose your Premium. We’ll try <br>
+                         to take the payment again over the next few days.
+                    </p>
+
+                    <p class="max-w-6xl text-xs sm:text-2xl mt-4 sm:text-left text-white dark:text-white">Payments through a partner</p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        If your plan is with a partner company (e.g. your phone or internet provider),<br>
+                         they manage your payments. You'll need to speak to them about anything <br>
+                          payment related.
+                    </p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        To check who your provider is, or to reach out to them directly:
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Go to your <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Under Account, choose Manage your plan.</li>
+                        <li>&bull; Check the contact link under Payment..</li>
+                    </ol>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        You can check or update your payment info on your account page, under Your <br>plan.
+                    </p>
+                </details>
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm font-semibold sm:text-xl">Charged too much</summary>
+                    <p class="max-w-6xl font-semibold text-xs sm:text-2xl mt-4 sm:text-left text-white dark:text-white">Check the price of your plan in your <br>
+                     account page, under Your plan
+                    </p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        where applicable, the price for premium includes VAT(Value Added Tax). But <br>
+                        in some places, an additional tax such as sales tax may be collected by the <br>
+                        local governments
+                    </p>
+
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        In your account page, you can view a breakdown of your charges under order <br>
+                        history:
+                    </p>
+
+                    <ul class="ml-5">
+                        <li>&bull; Log in <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Under <span class="font-semibold">Payment</span>, select <span class="font-semibold">Order history.</span></li>
+                        <li>&bull; Click <span class="font-semibold">More details.</span> </li>
+                    </ul>
+                    
+                    <p class="max-w-6xl text-xs font-semibold sm:text-2xl mt-4 sm:text-left text-white dark:text-white">Are you a student?</p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        Premium student is valid for 12 month from the day you signed up.
+                    </p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                     To renew your student discount, go to <a class="underline" href="#studentaccount">www.boomify.com/student</a> <br>
+                     and log in to your school portal or uplload proof of enrolment
+                    </p>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        Once you renew ,you get the discounted rate for another 12 months
+                    </p>
+                </details>
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm font-semibold sm:text-xl">Invite or remove family plan members</summary>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        The plan manager can add or remove memebers on thier Family page
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Go to your <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Under <span class="font-semibold">Subscription</span>, Manage mambers.</span></li>
+                        <li>&bull; Select the option to add mambers</span> </li>
+                    </ol>
+                </details>
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm font-semibold sm:text-xl">Update payment details</summary>
+                    <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white dark:text-white">
+                        To update or change your payment details
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Go to your <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Go to <span class="font-semibold">Manage your plan</span>, click the Update next to your payment <br>
+                        method.</span></li>
+                        <li>&bull; Enter a new payment method. </li>
+                    </ol>
+                </details>
+            </article>
+            <!-- mobile -->
+            <article class="md:hidden">
+                <h3 class="text-xl ml-5 font-bold text-white">Quick help</h3>
+                <details class="my-8 text-white ml-5">
+                    <summary class="text-sm">Can't log in</summary>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        If you don't remember your password, use password reset.
+                    </p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        If you don't remember your email or username, go to <a class="underline" href="#password reset"> password reset</a> and <br>
+                        enter possible email addresses you own. We will only send the reset email to a <br>
+                        Boomify registered email address.
+                    </p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        Note: There are a few ways to sign up, e.g. with email, phone number, <br>
+                         Facebook, Apple, or Google. <a class="underline" href="#login">Try logging in</a> with these to find your account
+                    </p>
+                </details>
+                
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm">Failed payment help</summary>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        Make sure your payment method has sufficient funds, and is:
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Registered in the same country to your Boomify account.</li>
+                        <li>&bull; Not expired or canceled.</li>
+                        <li>&bull; Enabled for foreign, secure online, and recurring purchases. Look for <br>
+                         these settings in your bank’s mobile app</li>
+                    </ol>
+
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        Also, make sure your bank or payment provider has your correct details. They <br>
+                        may need to verify your identity for security, e.g. with a password, PIN, <br>
+                        fingerprint, or code sent to your device.
+                    </p>
+
+                    <p class="text-xs sm:text-2xl mt-4 text-white dark:text-white">Still not working?</p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Try entering your payment details again using a private/incognito <br> window.</li>
+                        <li>&bull; Try a different payment method.</li>
+                        <li>&bull; It might just be a temporary connection issue, so wait a few hours and try <br>again.</li>
+                        <li>&bull; Get in touch with your payment provider.</li>
+                    </ol>
+
+                    <p class="text-xs sm:text-2xl mt-4 text-white dark:text-white">Regular payment failed?</p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        If a monthly payment fails, you won't immediately lose your Premium. We’ll try <br>
+                         to take the payment again over the next few days.
+                    </p>
+
+                    <p class="text-xs sm:text-2xl mt-4 text-white dark:text-white">Payments through a partner</p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        If your plan is with a partner company (e.g. your phone or internet provider),<br>
+                         they manage your payments. You'll need to speak to them about anything <br>
+                          payment related.
+                    </p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        To check who your provider is, or to reach out to them directly:
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Go to your <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Under Account, choose Manage your plan.</li>
+                        <li>&bull; Check the contact link under Payment..</li>
+                    </ol>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        You can check or update your payment info on your account page, under Your <br>plan.
+                    </p>
+                </details>
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm">Charged too much</summary>
+                    <p class="font-semibold text-xs sm:text-2xl mt-4 text-white dark:text-white">Check the price of your plan in your <br>
+                     account page, under Your plan
+                    </p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        where applicable, the price for premium includes VAT(Value Added Tax). But <br>
+                        in some places, an additional tax such as sales tax may be collected by the <br>
+                        local governments
+                    </p>
+
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        In your account page, you can view a breakdown of your charges under order <br>
+                        history:
+                    </p>
+
+                    <ul class="ml-5">
+                        <li>&bull; Log in <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Under <span class="font-semibold">Payment</span>, select <span class="font-semibold">Order history.</span></li>
+                        <li>&bull; Click <span class="font-semibold">More details.</span> </li>
+                    </ul>
+                    
+                    <p class="text-xs font-semibold sm:text-2xl mt-4 text-white dark:text-white">Are you a student?</p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        Premium student is valid for 12 month from the day you signed up.
+                    </p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                     To renew your student discount, go to <a class="underline" href="#studentaccount">www.boomify.com/student</a> <br>
+                     and log in to your school portal or uplload proof of enrolment
+                    </p>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        Once you renew ,you get the discounted rate for another 12 months
+                    </p>
+                </details>
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm">Invite or remove family plan members</summary>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        The plan manager can add or remove memebers on thier Family page
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Go to your <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Under <span class="font-semibold">Subscription</span>, Manage mambers.</span></li>
+                        <li>&bull; Select the option to add mambers</span> </li>
+                    </ol>
+                </details>
+    
+                <details class="my-5 text-white ml-5">
+                    <summary class="text-sm">Update payment details</summary>
+                    <p class="text-xs mt-4 text-white dark:text-white">
+                        To update or change your payment details
+                    </p>
+
+                    <ol class="ml-5">
+                        <li>&bull; Go to your <a class="underline" href="#account">account</a> page</li>
+                        <li>&bull; Go to <span class="font-semibold">Manage your plan</span>, click the Update next to your payment <br>
+                        method.</span></li>
+                        <li>&bull; Enter a new payment method. </li>
+                    </ol>
+                </details>
+            </article>
+        </section>
+
+
+        <section id="hero" class="bg-gray-950 flex flex-col p-2 sm:p-6 items-center sm:gap-x-32 scroll-m-40 widescreen:section-min-height tallscreen:section-min-height">
+            <h4 class="max-w-screen-sm  mt-16 text-2xl sm:text-5xl font-bold sm:text-5sl text-white">
+                Visit our Community
+            </h4>
+            <p class="hidden sm:block max-w-screen-md text-xs sm:text-base font-semibold mt-4  text-center sm:text-left text-white dark:text-white">
+                Have questions? Find answers from our worldwide Community of expert fans!
+            </p>
+            <p class="md:hidden max-w-screen-md text-xs font-semibold mt-4  text-center sm:text-left text-white dark:text-white">
+                Have questions? Find answers from our worldwide <br> Community of expert fans!
+            </p>
+            <button class="items-center mb-16 bg-blue-700 active:bg-blue-500 font-bold text-white p-3 w-52 mt-3 rounded-3xl border border-slate-900 dark:border-none sm:w-full sm:m-2w">Go To Community</button>
+        </section>
+
+
+        <footer id="footer" class="max-w-full bg-black text-white text-base ">
+            <section class="max-w-full p-4 gap-16 flex flex-col sm:flex-row">
+                <h5 class="hidden sm:block m-3 mt-16 text-3xl font-medium">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" src="img/logoo.png">
+                        oomify<span class="text-xs">®</span>
+                    </a>
+                </h5>
+                <h5 class="md:hidden m-2 mt-5 text-lg font-medium">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" class="w-3 h-3" src="img/logoo.png">
+                        oomify<span class="text-xs">®</span>
+                    </a>
+                </h5>
+    
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">COMPANY</li>
+                    <li class="mb-5"><a href="#about">About</a></li>
+                    <li class="mb-5"><a href="#jobs" class="hover:opacity-90">Jobs</a></li>
+                    <li><a href="#about" class="hover:opacity-90">For the Record</a></li>
+                </ul>
+                <ul class="md:hidden flex flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">COMPANY</li>
+                    <li class="text-base mb-5"><a href="#about">About</a></li>
+                    <li class="text-base mb-5"><a href="#jobs">Jobs</a></li>
+                    <li><a href="#about" class="text-base">For the Record</a></li>
+                </ul>
+     
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">COMMUNITIES</li>
+                    <li class="mb-5"><a href="#forartists" class="hover:opacity-90 mb-5">For Artists</a></li>
+                    <li class="mb-5"><a href="#developers" class="hover:opacity-90 mb-5">Developers</a></li>
+                    <li class="mb-5"><a href="#advertising" class="hover:opacity-90 mb-5">Advertising</a></li>
+                    <li class="mb-5"><a href="#investors" class="hover:opacity-90 mb-5">Investors</a></li>
+                    <li class="mb-5"><a href="#vendors" class="hover:opacity-90">Vendors</a></li>
+                </ul>
+                <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">COMMUNITIES</li>
+                    <li class="text-base mb-5"><a href="#forartists">For Artists</a></li>
+                    <li class="text-base mb-5"><a href="#developers">Developers</a></li>
+                    <li class="text-base mb-5"><a href="#advertising">Advertising</a></li>
+                    <li class="text-base mb-5"><a href="#investors">Investors</a></li>
+                    <li class="text-base mb-5"><a href="#vendors">Vendors</a></li>
+                </ul>
+    
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">USEFUL LINKS</li>
+                    <li class="mb-5"><a href="#support">Support</a></li>
+                    <li class="mb-5"><a href="#webplayer">Web Player</a></li>
+                    <li class="mb-5"><a href="#freemobile">Free Mobile <br> App</a></li>
+                </ul>
+                <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">USEFUL LINKS</li>
+                    <li class="text-base mb-5"><a href="#support">Support</a></li>
+                    <li class="text-base mb-5"><a href="#webplayer">Web Player</a></li>
+                    <li class="text-base mb-5"><a href="#freemobile">Free Mobile <br> App</a></li>
+                </ul>
+    
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">BOOMIFY PLANS</li>
+                    <li class="mb-5"><a href="individual.html" class="hover:opacity-90 mb-5">Premium <br> Individual</a></li>
+                    <li class="mb-5"><a href="#developers" class="hover:opacity-90 mb-5">Premium Duo</a></li>
+                    <li class="mb-5"><a href="family.html" class="hover:opacity-90 mb-5">Premium Family</a></li>
+                    <li class="mb-5"><a href="student.html" class="hover:opacity-90 mb-5">Premium <br> Student</a></li>
+                    <li class="mb-5"><a href="#vendors" class="hover:opacity-90">Boomify Free</a></li>
+                </ul>
+                <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">BOOMIFY PLANS</li>
+                    <li class="text-base mb-5"><a href="individual.html">Premium <br> Individual</a></li>
+                    <li class="text-base mb-5"><a href="#developers">Premium Duo</a></li>
+                    <li class="text-base mb-5"><a href="family.html">Premium Family</a></li>
+                    <li class="text-base mb-5"><a href="student.html">Premium <br> Student</a></li>
+                    <li class="text-base mb-5"><a href="#vendors">Boomify Free</a></li>
+                </ul>
+    
+                <div class="hidden sm:block ">
+                    <ul class="ml-32 flex flex-row gap-5 sm:gap-4 mt-16">
+                        <li><a href="#instagram"><img class="m-3 h-12 w-12 rounded-full" src="logo/instagramlogo.png" alt="instagram"></a></li>
+                        <li><a href="#twitter"><img class="m-3 h-12 w-12 rounded-full" src="logo/twitterlogo.png" alt="twitter"></a></li>
+                        <li><a href="#facebook"><img class="m-3 h-12 w-12 rounded-full" src="logo/facebooklogo.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <ul class="flex flex-row m-3">
+                        <li><a href="#instagram"><img class="mr-3 h-8 w-8 rounded-full" src="logo/instagramlogo.png" alt="instagram"></a></li>
+                        <li><a href="#twitter"><img class="mr-3 h-8 w-8 rounded-full" src="logo/twitterlogo.png" alt="twitter"></a></li>
+                        <li><a href="#facebook"><img class="mr-3 h-8 w-8 rounded-full" src="logo/facebooklogo.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+                
+            </section>
+    
+            <section class="flex flex-row sm:flex-row max-w-full p-4">
+                <div class="hidden sm:block ">
+                    <nav class="flex sm:flex-row gap-8 mb-16 text-xs" aria-label="footer">
+                        <a href="#legal" class="text-slate-500 hover:opacity-90 mt-12">Legal</a>
+                        <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">safety & Privacy Center</a>
+                        <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">Privacy Policy</a>
+                        <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">Cookies</a>
+                        <a href="#aboutads" class="text-slate-500 hover:opacity-90 mt-12">About Ads</a>
+                        <a href="#accessibility" class="text-slate-500 hover:opacity-90 mt-12">Accessibility</a>
+                    </nav>
+                </div>
+                <nav class="md:hidden mb-3 mt-5 text-xs gap-8" aria-label="footer">
+                    <a href="#legal" class="text-xs text-slate-500 mr-3">Legal</a>
+                    <a href="#privacy" class="text-slate-500">safety & Privacy Center</a>
+                    <br>
+                    <br>
+                    <a href="#privacy" class="text-slate-500 mr-3">Privacy Policy</a>
+                    <a href="#privacy" class="text-slate-500 mr-3 mb-3">Cookies</a>
+                    <br>
+                    <br>
+                    <a href="#aboutads" class="text-slate-500 mr-3">About Ads</a>
+                    <a href="#accessibility" class="text-slate-500">Accessibility</a>
+                </nav>
+    
+                <div class="hidden sm:block flex-col sm:flex-col ml-64 mb-8">
+                    <a href="#accessibility" class="text-slate-500 text-xs ml-64">🌎Nigeria</a>
+                    <p class="text-slate-500 text-xs mt-8 ml-64">© 2024 Boomify AB</p>
+                </div>
+    
+                <div class="md:hidden ml-32 gap-8">
+                    <a href="#accessibility" class="text-slate-500 text-xs">🌎Nigeria</a>
+                    <br>
+                    <a href="#accessibility" class="text-slate-500 text-xs">©2024BoomifyAB</a>
+                </div>
+            </section>
+        </footer>
+    </main>
+    
+</body>
+</html>

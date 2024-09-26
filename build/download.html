@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomify.download</title>
+    <link rel="icon" href="favicon/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+    
+<body class="bg-black dark:bg-black">
+    <header class="bg-gray-950 text-white sticky top-0 z-10">
+        <section class="max-w-6xl mx-auto p-4 md:py-5 px-3 flex justify-between items-center">
+            <h1 class="text-base sm:text-3xl font-medium">
+                <a href="index.html" class="flex flex-row">
+                    <img alt="logo3" src="img/logoo.png">
+                    oomify<span class="text-xs">®</span>
+                </a>
+            </h1>
+
+            <div>
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                    <!-- &#9776; -->
+                    <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+                </button>
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                    <a href="index.html#premium" class="hover:opacity-90">Premium</a>
+                    <a href="support.html" class="hover:opacity-90">Support</a>
+                    <a href="download.html" class="hover:opacity-90">Download</a>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-4xl flex-col justify-center origin-top animate-open-menu hidden">
+            <div class="ml-32">
+                <button class="ml-64 text-5xl font-bold self-end">
+                    &times;
+                </button>
+            </div>
+            <nav class="flex flex-col min-h-screen items-center py-8 ml-8" aria-label="mobile">
+                <a href="#premium" class="w-full py-6 hover:opacity-90">
+                    PREMIUM
+                </a>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="individual.html" class="w-full hover:opacity-90 font-bold">Premium Individual</a>
+                    </p>
+                </div>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="student.html" class="w-full hover:opacity-90 font-bold">Premium Student</a>
+                    </p>
+                </div>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="family.html" class="w-full hover:opacity-90 font-bold">Premium Family</a>
+                    </p>
+                </div>
+                <a href="support.html" class="w-full py-6 hover:opacity-90">SUPPORT</a>
+                <a href="download.html" class="w-full py-6 hover:opacity-90 ml-5 mr-5">DOWNDLOAD</a>
+                <a href="#boomify" class="w-full py-6 hover:opacity-90">ACCOUNT</a>
+                <a href="#logout" class="w-full py-6 hover:opacity-90">LOG OUT</a>
+                <h1 class="md:hidden text-base font-medium ml-64">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" src="img/logoo.png">
+                        oomify limited <span class="text-xs">.....®</span>
+                    </a>
+                </h1>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-teal-700 dark:bg-teal-400  flex flex-col p-2 sm:p-6 items-center sm:gap-x-32 scroll-m-40 widescreen:section-min-height tallscreen:section-min-height">
+            <img class="hidden sm:block w-52 mt-16" src="icon/laptop.png" alt="">
+            <img class="md:hidden w-20 mt-16" src="icon/laptop.png" alt="">
+            <h1 class="text-4xl font-bold text-black text-center mt-8">Download Boomify</h1>
+            <p class="text-base mt-4  text-center text-black dark:text-black mb-4">
+                Play millions of songs and podcasts on your device.
+            </p>
+
+            <button class="w-52 bg-gray-950 text-white p-2 rounded-3xl border border-slate-900 dark:border-none mt-5 justify-center">
+                <a href="https://apps.microsoft.com/detail/9ncbcszsjrsb?hl=en-US&gl=US">
+                    Download from the <span class="text-2xl">Microsoft store</span>
+                </a>
+                <img class="w-10 ml-5 object-center" src="icon/microsoft.png" alt="">
+            </button>
+            
+            <p class="text-base mt-16 text-center text-black dark:text-white mb-16">
+                <a class="underline" href="download.html">Download directly from Boomify</a> 
+            </p>
+        </section>
+
+        <section id="features" class="justify-center p-6 items-center scroll-m-40 bg-white widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black text-center mt-12">Bring your music to mobile and tablet, too.</h2>
+            <p class="text-base mt-8 text-center text-black dark:text-black mb-12">
+                Listening on your phone or tablet is free, easy, and fun.
+            </p>
+
+            <div class="hidden sm:block ml-64 mb-16">
+                <nav class="flex flex-row gap-8">
+                    <img class="w-14 h-10 ml-32 rounded" src="icon/appstor.png" alt="">
+                    <img class="w-14 h-10 rounded" src="icon/google play.png" alt="">
+                    <img class="w-14 h-10" src="icon/getmicro.png" alt="">
+                </nav>
+            </div>
+            <!-- mobile -->
+            <div class="md:hidden gap-8 mb-16 flex flex-row flex-wrap justify-center">
+                <img class="w-14 h-10 rounded" src="icon/appstor.png" alt="">
+                <img class="w-14 h-10 rounded" src="icon/google play.png" alt="">
+                <img class="w-14 h-10" src="icon/getmicro.png" alt="">
+            </div>
+
+        </section>
+
+        <section id="hero" style="background-image: url(icon/devices111.png); background-size: cover;" class="bg-gray-950 flex flex-col p-2 sm:p-6 items-center sm:gap-x-32 scroll-m-40 widescreen:section-min-height tallscreen:section-min-height">
+            <div class="mt-16"><img class="w-52" src="icon/device.png" alt=""></div>
+            <h4 class="hidden sm:block max-w-screen-sm  mt-4 text-2xl sm:text-3xl font-bold sm:text-5sl text-white">
+                One account, listen everywhere.
+            </h4>
+            <h4 class="md:hidden max-w-screen-sm  mt-4 text-2xl sm:text-3xl font-bold sm:text-5sl text-black">
+                One account, listen everywhere.
+            </h4>
+
+            <div class="hidden sm:block">
+                <ul class="flex flex-row mt-5 gap-8 mb-16" aria-label="footer">
+                    <li class="text-base text-white">MOBILE</li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base text-black">COMPUTER</li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base text-white">TABLET</li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base underline text-white font-semibold"><a href="#advertising">CAR</a></li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base underline text-white font-semibold"><a href="#investors">PLAYSTATION</a></li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base underline text-white font-semibold"><a href="#vendors">XBOX</a></li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base underline text-white font-semibold"><a href="#vendors">TV</a></li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base underline text-white font-semibold"><a href="#vendors">SPEAKER</a></li>
+                    <span class="text-white font-bold">.</span>
+                    <li class="text-base underline text-white font-semibold"><a href="#vendors">WEB PLAYER</a></li>
+                </ul>
+            </div>
+            
+
+            <ul class="md:hidden flex-col mt-5 gap-3 mb-16 text-center" aria-label="footer">
+                <li class="text-base text-black font-bold">MOBILE</li>
+                <li class="text-base text-black mt-3 font-bold">COMPUTER</li>
+                <li class="text-base text-black mt-3 font-bold">TABLET</li>
+                <li class="text-base underline text-black mt-3 font-bold"><a href="#advertising">CAR</a></li>
+                <li class="text-base underline text-black mt-3 font-bold"><a href="#investors">PLAYSTATION</a></li>
+                <li class="text-base underline text-black font-bold mt-3"><a href="#vendors">XBOX</a></li>
+                <li class="text-base underline text-black font-bold mt-3"><a href="#vendors">TV</a></li>
+                <li class="text-base underline text-black font-bold mt-3"><a href="#vendors">SPEAKER</a></li>
+                <li class="text-base underline text-black font-bold mt-3"><a href="#vendors">WEB PLAYER</a></li>
+            </ul>
+           
+        </section>
+
+
+        <footer id="footer" class="max-w-full bg-black text-white text-base ">
+            <section class="max-w-full p-4 gap-16 flex flex-col sm:flex-row">
+                <h5 class="hidden sm:block m-3 mt-16 text-3xl font-medium">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" src="img/logoo.png">
+                        oomify<span class="text-xs">®</span>
+                    </a>
+                </h5>
+                <h5 class="md:hidden m-2 mt-5 text-lg font-medium">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" class="w-3 h-3" src="img/logoo.png">
+                        oomify<span class="text-xs">®</span>
+                    </a>
+                </h5>
+    
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">COMPANY</li>
+                    <li class="mb-5"><a href="#about">About</a></li>
+                    <li class="mb-5"><a href="#jobs" class="hover:opacity-90">Jobs</a></li>
+                    <li><a href="#about" class="hover:opacity-90">For the Record</a></li>
+                </ul>
+                <ul class="md:hidden flex flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">COMPANY</li>
+                    <li class="text-base mb-5"><a href="#about">About</a></li>
+                    <li class="text-base mb-5"><a href="#jobs">Jobs</a></li>
+                    <li><a href="#about" class="text-base">For the Record</a></li>
+                </ul>
+     
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">COMMUNITIES</li>
+                    <li class="mb-5"><a href="#forartists" class="hover:opacity-90 mb-5">For Artists</a></li>
+                    <li class="mb-5"><a href="#developers" class="hover:opacity-90 mb-5">Developers</a></li>
+                    <li class="mb-5"><a href="#advertising" class="hover:opacity-90 mb-5">Advertising</a></li>
+                    <li class="mb-5"><a href="#investors" class="hover:opacity-90 mb-5">Investors</a></li>
+                    <li class="mb-5"><a href="#vendors" class="hover:opacity-90">Vendors</a></li>
+                </ul>
+                <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">COMMUNITIES</li>
+                    <li class="text-base mb-5"><a href="#forartists">For Artists</a></li>
+                    <li class="text-base mb-5"><a href="#developers">Developers</a></li>
+                    <li class="text-base mb-5"><a href="#advertising">Advertising</a></li>
+                    <li class="text-base mb-5"><a href="#investors">Investors</a></li>
+                    <li class="text-base mb-5"><a href="#vendors">Vendors</a></li>
+                </ul>
+    
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">USEFUL LINKS</li>
+                    <li class="mb-5"><a href="support.html">Support</a></li>
+                    <li class="mb-5"><a href="#webplayer">Web Player</a></li>
+                    <li class="mb-5"><a href="#freemobile">Free Mobile <br> App</a></li>
+                </ul>
+                <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">USEFUL LINKS</li>
+                    <li class="text-base mb-5"><a href="support.html">Support</a></li>
+                    <li class="text-base mb-5"><a href="#webplayer">Web Player</a></li>
+                    <li class="text-base mb-5"><a href="#freemobile">Free Mobile <br> App</a></li>
+                </ul>
+    
+                <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                    <li class="text-sm font-bold text-slate-500 mb-5">BOOMIFY PLANS</li>
+                    <li class="mb-5"><a href="individual.html" class="hover:opacity-90 mb-5">Premium <br> Individual</a></li>
+                    <li class="mb-5"><a href="#developers" class="hover:opacity-90 mb-5">Premium Duo</a></li>
+                    <li class="mb-5"><a href="family.html" class="hover:opacity-90 mb-5">Premium Family</a></li>
+                    <li class="mb-5"><a href="student.html" class="hover:opacity-90 mb-5">Premium <br> Student</a></li>
+                    <li class="mb-5"><a href="#vendors" class="hover:opacity-90">Boomify Free</a></li>
+                </ul>
+                <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                    <li class="text-sm font-semibold text-slate-500 mb-5">BOOMIFY PLANS</li>
+                    <li class="text-base mb-5"><a href="individual.html">Premium <br> Individual</a></li>
+                    <li class="text-base mb-5"><a href="#developers">Premium Duo</a></li>
+                    <li class="text-base mb-5"><a href="family.html">Premium Family</a></li>
+                    <li class="text-base mb-5"><a href="student.html">Premium <br> Student</a></li>
+                    <li class="text-base mb-5"><a href="#vendors">Boomify Free</a></li>
+                </ul>
+    
+                <div class="hidden sm:block ">
+                    <ul class="ml-32 flex flex-row gap-5 sm:gap-4 mt-16">
+                        <li><a href="#instagram"><img class="m-3 h-12 w-12 rounded-full" src="logo/instagramlogo.png" alt="instagram"></a></li>
+                        <li><a href="#twitter"><img class="m-3 h-12 w-12 rounded-full" src="logo/twitterlogo.png" alt="twitter"></a></li>
+                        <li><a href="#facebook"><img class="m-3 h-12 w-12 rounded-full" src="logo/facebooklogo.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <ul class="flex flex-row m-3">
+                        <li><a href="#instagram"><img class="mr-3 h-8 w-8 rounded-full" src="logo/instagramlogo.png" alt="instagram"></a></li>
+                        <li><a href="#twitter"><img class="mr-3 h-8 w-8 rounded-full" src="logo/twitterlogo.png" alt="twitter"></a></li>
+                        <li><a href="#facebook"><img class="mr-3 h-8 w-8 rounded-full" src="logo/facebooklogo.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+                
+            </section>
+    
+            <section class="flex flex-row sm:flex-row max-w-full p-4">
+                <div class="hidden sm:block ">
+                    <nav class="flex sm:flex-row gap-8 mb-16 text-xs" aria-label="footer">
+                        <a href="#legal" class="text-slate-500 hover:opacity-90 mt-12">Legal</a>
+                        <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">safety & Privacy Center</a>
+                        <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">Privacy Policy</a>
+                        <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">Cookies</a>
+                        <a href="#aboutads" class="text-slate-500 hover:opacity-90 mt-12">About Ads</a>
+                        <a href="#accessibility" class="text-slate-500 hover:opacity-90 mt-12">Accessibility</a>
+                    </nav>
+                </div>
+                <nav class="md:hidden mb-3 mt-5 text-xs gap-8" aria-label="footer">
+                    <a href="#legal" class="text-xs text-slate-500 mr-3">Legal</a>
+                    <a href="#privacy" class="text-slate-500">safety & Privacy Center</a>
+                    <br>
+                    <br>
+                    <a href="#privacy" class="text-slate-500 mr-3">Privacy Policy</a>
+                    <a href="#privacy" class="text-slate-500 mr-3 mb-3">Cookies</a>
+                    <br>
+                    <br>
+                    <a href="#aboutads" class="text-slate-500 mr-3">About Ads</a>
+                    <a href="#accessibility" class="text-slate-500">Accessibility</a>
+                </nav>
+    
+                <div class="hidden sm:block flex-col sm:flex-col ml-64 mb-8">
+                    <a href="#accessibility" class="text-slate-500 text-xs ml-64">🌎Nigeria</a>
+                    <p class="text-slate-500 text-xs mt-8 ml-64">© 2024 Boomify AB</p>
+                </div>
+    
+                <div class="md:hidden ml-32 gap-8">
+                    <a href="#accessibility" class="text-slate-500 text-xs">🌎Nigeria</a>
+                    <br>
+                    <a href="#accessibility" class="text-slate-500 text-xs">©2024BoomifyAB</a>
+                </div>
+            </section>
+        </footer>
+    </main>
+    
+</body>
+</html>

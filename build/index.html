@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomify</title>
+    <link rel="icon" href="favicon/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gray-950 dark:bg-gray-950">
+    <header class="bg-gray-950 text-white sticky top-0 z-10">
+        <section class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-base sm:text-3xl font-medium">
+                <a href="#hero" class="flex flex-row">
+                    <img alt="logo3" src="img/logoo.png">
+                    oomify<span class="text-xs">®</span>
+                </a>
+            </h1>
+
+            <div>
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                    <!-- &#9776; -->
+                    <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+                </button>
+
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                    <a href="#premium" class="hover:opacity-90">Premium</a>
+                    <a href="support.html" class="hover:opacity-90">Support</a>
+                    <a href="download.html" class="hover:opacity-90">Download</a>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-4xl flex-col justify-center origin-top animate-open-menu hidden">
+            <div class="ml-32">
+                <button class="ml-64 text-5xl font-bold self-end">
+                    &times;
+                </button>
+            </div>
+            <nav class="flex flex-col min-h-screen items-center py-8 ml-8" aria-label="mobile">
+                <a href="#premium" class="w-full py-6 hover:opacity-90">
+                    PREMIUM
+                </a>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="individual.html" class="w-full hover:opacity-90 font-bold">Premium Individual</a>
+                    </p>
+                </div>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="student.html" class="w-full hover:opacity-90 font-bold">Premium Student</a>
+                    </p>
+                </div>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none m-3">
+                    <p class="text-base mt-4 text-center sm:text-left text-white mb-5">
+                        <a href="family.html" class="w-full hover:opacity-90 font-bold">Premium Family</a>
+                    </p>
+                </div>
+                <a href="support.html" class="w-full py-6 hover:opacity-90">SUPPORT</a>
+                <a href="download.html" class="w-full py-6 hover:opacity-90 ml-5 mr-5">DOWNDLOAD</a>
+                <a href="#boomify" class="w-full py-6 hover:opacity-90">ACCOUNT</a>
+                <a href="#logout" class="w-full py-6 hover:opacity-90">LOG OUT</a>
+                <h1 class="md:hidden text-base font-medium ml-64">
+                    <a href="#hero" class="flex flex-row">
+                        <img alt="logo3" src="img/logoo.png">
+                        oomify limited <span class="text-xs">.....®</span>
+                    </a>
+                </h1>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="hero" class="flex flex-col-reverse justify-center dark:bg-gradient-to-b from-blue-600 via-gray-950 to-gray-950 sm:flex-row p-2 sm:p-6 items-center sm:gap-x-32 scroll-m-40 widescreen:section-min-height tallscreen:section-min-height">
+            <article class="m-3 sm:w-1/2  sm:ml-12">
+                <h2 class="max-w-screen-sm mt-16 text-2xl sm:text-5xl font-bold sm:text-center sm:text-5sl text-left text-white">
+                    Ends soon: ₦0 for 3 <br>months of Premium
+                </h2>
+                <p class="hidden sm:block max-w-screen-md text-xs sm:text-xl mt-4 text-center sm:text-left text-white">
+                    Don't miss ad-free music listening, offline playback, and more. Cancel <br>anytime.
+                </p>
+                <p class="max-w-screen-md text-xs sm:text-xl mt-4 sm:text-left text-white">
+                    Don't miss ad-free music listening, offline playback,<br> and more. Cancel anytime.
+                </p>
+                <div class="bg-slate-800 hover:bg-gray-800 active:bg-gray-700  text-white w-44 rounded border border-slate-900 dark:border-none">
+                    <p class="text-base mt-4 text-center sm:text-left text-white">
+                        🔔Offer ends in 5 days
+                    </p>
+                </div>
+                <button class="hidden sm:block bg-blue-700 active:bg-blue-500 font-bold text-white p-2 w-52 mt-10 rounded-3xl border border-slate-900 dark:border-none sm:w-full sm:m-2w">Try free for 3 months</button>
+                <button class="md:hidden bg-blue-700 active:bg-blue-500 font-bold text-white p-2 w-52 mt-10 rounded-3xl border border-slate-900 dark:border-none sm:w-full sm:m-2">Try free for 3 months</button>
+        
+                <button class="hidden sm:block bg-gray-950 active:bg-gray-950 font-bold text-white p-2 w-48 rounded-3xl border border-slate-950 dark:border-none"><a href="#premium">View all plans</a></button>
+                <button class="md:hidden bg-gray-950 active:bg-gray-950 font-bold text-white p-2 w-52 rounded-3xl border border-slate-950 dark:border-none"><a href="#premium">View all plans</a></button>
+
+                <p class="hidden md:block max-w-screen-md text-xs mt-4 text-center sm:text-left text-white">
+                    Premium Individual only. Free for 3 months, then NGN 900 per month after. <br> Offer only available if you haven't tried Premium before. <span class="underline"><a href="#terms">Terms apply.</a></span> <br>
+                    Offer ends September 17, 2024.
+                </p>
+                <p class="md:hidden max-w-screen-md text-xs mt-4 sm:text-left text-white"><a class="underline" href="#terms">Terms apply.</a></p>
+            </article>
+            <img class="hidden md:block w-1/3 mt-10 m-3" src="icon/boom.png" alt="musicc">
+        </section>
+
+        <hr class="md:hidden my-3 w-full text-white">
+
+        <section id="features" class="hidden md:block p-6 m-16 my-12 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-3xl mb-5 text-white">Make the most of your Premium experience</h2>
+            <p class="text-xl font-semibold text-center sm:text-sm mb-5 text-white">
+                Personalize your music listening with our most loved Premium features
+            </p>
+            <ul class="list-none mx-auto my-12 flex flex-wrap flex-col sm:flex-row items-center gap-8">
+                <li style="background-image: url(icon/dj.png); background-size: cover;" class="w-2/3 bg-cover sm:max-w-80 items-center flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h3 class="text-2xl mt-24 px-3 font-bold text-white">Sit back and let DJ</h3>
+                    <p class="sm:text-2xl font-bold mt-2 px-3 text-white">take over</p>
+                </li>
+
+                <li style="background-image: url(icon/adfree.png); background-size: cover;" class="w-2/3 sm:max-w-80 items-center flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h3 class="text-2xl mt-24 px-3 font-bold text-white">Enjoy listening to ad-</h3>
+                    <p class="sm:text-2xl font-bold mt-2 px-3 text-white">free music</p>
+                </li>
+
+                <li style="background-image: url(icon/jamwithfriends.png); background-size: cover;" class="w-2/3 sm:max-w-80 items-center flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h3 class="text-2xl mt-24 px-3 font-bold text-white">Start a jam with</h3>
+                    <p class="sm:text-2xl font-bold mt-2 px-3 text-white">friends</p>
+                </li>
+
+                <li style="background-image: url(icon/listen.png); background-size: cover;" class="w-2/3 sm:max-w-80 items-center flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h3 class="text-2xl mt-24 px-3 font-bold text-white">Give your listening</h3>
+                    <p class="sm:text-2xl font-bold mt-2 px-3 text-white">controls a try</p>
+                </li>
+
+                <li style="background-image: url(icon/internet.png); background-size: cover;" class="w-2/3 sm:max-w-80 items-center flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h3 class="text-2xl mt-24 px-3 font-bold text-white">Start listening on the</h3>
+                    <p class="sm:text-2xl font-bold mt-2 px-3 text-white">go, without internet</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="gap-8 items-center widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-3xl font-bold text-center sm:text-4xl mt-12 mb-5 text-white">Affordable plans for any situation</h2>
+            <p class="text-xs font-semibold text-center sm:text-base mb-5 text-white">
+                Choose a plan and listen to ad-free music without limits on your phone, speaker, <br> and other devices. Pay in various ways. Cancel anytime
+            </p>
+            <ul class="list-none my-5 flex flex-col items-center">
+                <li class="flex flex-row p-2 ">
+                    <img class="h-10 w-12 rounded m-3" src="logo/visaa.png" alt="visa">
+                    <img class="h-10 w-12 rounded m-3" src="logo/mastercard.png" alt="mastercard">
+                    <img class="h-10 w-12 rounded m-3" src="logo/verve.png" alt="verve">
+                </li>
+            </ul>
+        </section>
+
+        <section id="premium" class="gap-2 m-3 items-center widescreen:section-min-height tallscreen:section-min-height">
+            <div class="hidden sm:block">
+                <div class="items-center flex gap-8 m-5 ml-64  md:m-16">
+                    <h2 class="text-xl font-bold text-center sm:text-3xl mt-12 mb-16 text-white">All Premium plans include</h2>
+                    <ul class="text-xl font-semibold sm:text-base mb-5 text-white">
+                        <li>&#128504; Ad-free music listening</li>
+                        <li>&#128504; Download to listen offline</li>
+                        <li>&#128504; Play songs in any order</li>
+                        <li>&#128504; High audio quality</li>
+                        <li>&#128504; Listen with friends in real time</li>
+                        <li>&#128504; Organize listening queue</li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Mobile -->
+            <div class="md:hidden items-center gap-8 m-5 mb-16">
+                <h2 class="font-bold text-center text-2xl mt-12 mb-5 text-white">All Premium plans include</h2>
+                <ul class="text-xl font-semibold mb-5 text-white text-center">
+                    <li> Ad-free music listening</li>
+                    <li> Download to listen offline</li>
+                    <li> Play songs in any order</li>
+                    <li> High audio quality</li>
+                    <li> Listen with friends in real time</li>
+                    <li> Organize listening queue</li>
+                </ul>
+            </div> 
+            
+            <hr class="md:hidden w-full text-white">
+
+            <ul class="mb-12  flex flex-wrap flex-col sm:flex-row items-center gap-8 object-center mt-16 justify-center">
+                <li class=" h-96 gap-4 ml-16 w-full sm:w-9/12 flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h1 class="flex flex-row text-sm sm:text-2xl text-white">
+                        <img class="w-7 h-3 rounded-full" alt="logo3" src="img/logoo.png">Premium
+                    </h1>
+                    <p class="text-sm sm:text-lg font-bold mt-2 px-3 text-white"><span class="text-3xl sm:text-4xl dark:bg-pink-300">Individual</span><br> NGN 900 / month</p>
+                    <br>
+                    <hr class="mb-3 bg-black dark:bg-white">
+                    <br>
+                    <ul class="text-xs sm:text-base m-3 text-white">
+                        <li>&bull; 1 Premium account</li>
+                        <li>&bull; Cancel anytime</li>
+                        <li>&bull; Subscribe or one-time payment</li>
+                    </ul>
+                    <button class="hidden sm:block w-2/3 bg-blue-700 active:bg-blue-500 font-bold text-white items-center p-3 mt-6 mb-5 rounded-3xl border border-slate-900 dark:border-none"><a href="individual.html">Get Premium Individual</a></button>
+                    <button class="md:hidden w-2/3 bg-blue-700 active:bg-blue-500 font-bold text-white items-center p-3 mt-6 mb-5 rounded-3xl border border-slate-900 dark:border-none"><a href="individual.html">Get Premium Individual</a></button>
+                    <p class="hidden sm:block text-xs mb-5 text-center text-white">This Offer available only to anyone at anywhere at anytime.<a class="underline" href="#Terms">Terms apply</a></p>
+                    <p class="md:hidden text-xs underline text-center text-white">This Offer is available to anyone anywher at anytime. <a href="#Terms">Terms apply</a></p>
+                </li>
+
+                <li class="h-96 gap-4 ml-16 sm: flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h1 class="flex flex-row text-sm sm:text-2xl text-white">
+                        <img class="w-7 h-3 rounded-full" alt="logo3" src="img/logoo.png">Premium
+                    </h1>
+                    <p class="text-sm sm:text-lg font-bold mt-2 px-3 text-white"><span class="text-3xl sm:text-4xl dark:bg-pink-300">Student</span><br> NGN 450 / month</p>
+                    <br>
+                    <hr class="m-6 mb-3 bg-black dark:bg-white">
+                    <br>
+                    <ul class="text-xs sm:text-base m-3 text-white">
+                        <li>&bull; 1 verified Premium account</li>
+                        <li>&bull; Discount for eligible students</li>
+                        <li>&bull; Cancel anytime</li>
+                    </ul>
+                    <button class="w-2/3 bg-blue-700 active:bg-blue-500 font-bold text-white p-3 mt-6 mb-5 rounded-3xl border border-slate-900 dark:border-none"><a href="student.html">Get Premium Student</a></button>
+                    <p class="hidden sm:block text-xs my-4 text-center text-white">This Offer available only to students at an accredited higher education <br>institution.<a class="underline" href="#Terms">Terms apply</a></p>
+                    <p class="md:hidden text-xs underline text-center text-white">Offer available only to students at an accredited higher education <br><a href="#Terms">Terms apply</a></p>
+                </li>
+
+                <li class=" h-96 gap-4 sm:max-w-96 flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h1 class="flex flex-row text-sm sm:text-2xl text-white">
+                        <img class="w-7 h-3 rounded-full" alt="logo3" src="img/logoo.png">Premium
+                    </h1>
+                    <p class="text-sm sm:text-lg font-bold mt-2 px-3 text-white"><span class="text-3xl sm:text-4xl dark:bg-pink-300">Duo</span><br> NGN 1,200 / month</p>
+                    <br>
+                    <hr class="m-6 mb-3 bg-black dark:bg-white">
+                    <br>
+                    <ul class="text-xs sm:text-base m-3 text-white">
+                        <li>&bull; 2 Premium account</li>
+                        <li>&bull; Cancel anytime</li>
+                    </ul>
+                    <button class="w-2/3 bg-blue-700 active:bg-blue-500 font-bold text-white p-3 mt-5 mb-4 rounded-3xl border border-slate-900 dark:border-none">Get Premium Duo</button>
+                    <p class="hidden sm:block text-xs my-5 text-center text-white">This offer is for couples who reside at the same address <a class="underline" href="#Terms">Terms apply</a></p>
+                    <p class="md:hidden text-xs underline text-center text-white">This offer is for couples who reside at the same address/ same time<br><a href="#Terms">Terms apply</a></p>
+                </li>
+
+                <li class=" m-5 h-96 sm:gap-4  sm:ml-64 max-w-2.5 sm:max-w-96 flex-col border-solid border-gray-800 dark:border-gray-800 dark:bg-gray-800 py-6 px-2 rounded-xl shadow-xl">
+                    <h1 class="flex flex-row text-sm sm:text-2xl text-white">
+                        <img class="w-7 h-3 rounded-full" alt="logo3" src="img/logoo.png">Premium
+                    </h1>
+                    <p class="text-sm sm:text-lg font-bold mt-2 px-3 text-white"><span class="text-3xl sm:text-4xl dark:bg-pink-300">Family</span><br> NGN 1,400 / month</p>
+                    <br>
+                    <hr class="m-6 mb-3 bg-black dark:bg-white">
+                    <br>
+                    <ul class="text-xs sm:text-base m-3 text-white">
+                        <li>&bull; Up to 6 Premium account</li>
+                        <li>&bull; Control content marked as explicit</li>
+                        <li>&bull; Cancel anytime</li>
+                    </ul>
+                    <button class="hidden sm:block w-2/3 bg-blue-700 active:bg-blue-500 font-bold text-white items-center p-3 mt-6 mb-5 rounded-3xl border border-slate-900 dark:border-none"><a href="family.html">Get Premium Family</a></button>
+                    <button class="md:hidden w-2/3 bg-blue-700 active:bg-blue-500 font-bold text-white items-center p-3 mt-6 mb-5 rounded-3xl border border-slate-900 dark:border-none"><a href="family.html">Get Premium Family</a></button>
+                    <p class="hidden sm:block text-xs mb-5 text-center text-white">For up to 6 family members residing at the same address<a class="underline" href="#Terms">Terms apply</a></p>
+                    <p class="md:hidden text-xs underline text-center text-white">For up to 6 family members residing at the same address/ same time <br><a href="#Terms">Terms apply</a></p>
+                </li>
+            </ul>
+            
+        </section>
+
+        <hr class="md:hidden w-full text-white">
+        
+        <section id="features" class="m-3 max-w-6xl my-12 ">
+            <h2 class="hidden sm:block text-4xl font-bold text-center mb-5 text-white">Questions?</h2>
+            <p class="hidden sm:block font-semibold text-center text-base mb-5 text-white">We've got answers.</p>
+            <p class="hidden sm:block font-semibold text-center text-base mb-5 text-white">Find more answers in our <span class="underline"><a href="#support">support site.</a></span></p>
+            <!-- Mobile -->
+            <h2 class="md:hidden text-2xl text-center m-3 font-bold text-white">Questions?</h2>
+            <p class="md:hidden text-sm text-center text-white m-3">We've got answers.</p>
+            <p class="md:hidden text-sm mb-5 text-center text-white">Find more answers in our <span class="underline"><a href="#support">support site.</a></span></p>
+
+            <details class="my-8">
+                <summary class="text-sm font-bold sm:text-xl text-white">How does the Boomify Premium trial work?</summary>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    If you've never had Premium before, you may be eligible for a free (or reduced rate) trial.
+                </p>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    For trials, you'll still need to enter a valid payment method to sign up. We'll use this to confirm your country or region and take payments if you want to keep Premium after the offer ends.
+                </p>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    We'll send you a reminder 7 days before your trial ends. Country restrictions and Terms apply.
+                </p>
+            </details>
+            
+            <hr class="mx-auto bg-black dark:bg-gray-700 w-full">
+
+            <details class="my-5">
+                <summary class="text-sm font-bold sm:text-xl text-white">How do I cancel my Premium plan?</summary>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    You can easily cancel your Premium plan any time online on your account page. Your Premium stays until your next billing date, then your account switches over to our free plan
+                </p>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    You'll keep all your playlists, saved music, and be able to listen with ads when your account is free.
+                </p>
+            </details>
+
+            <hr class="mx-auto bg-black dark:bg-gray-700 w-full">
+
+            <details class="my-5">
+                <summary class="text-sm font-bold sm:text-xl text-white">How does the Premium Duo plan work?</summary>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    Premium Duo is a plan for a couple who lives together. Compared with having two full-price Premium Individual accounts, it's also cheaper. We'll ask for
+                     your address to ensure you live at the same address. You can invite a member to the plan right after the purchase. Each member has their own separate
+                      Premium account and can listen at the same time with their own account. All saved music and playlists are their own. The other account holder cannot see
+                       what you are listening to.
+                </p>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    <span class="underline"><a href="#Readmore">Read more</a></span> info about Premium Duo.
+                </p>
+            </details>
+
+            <hr class="mx-auto bg-black dark:bg-gray-700 w-full">
+
+            <details class="my-5">
+                <summary class="text-sm font-bold sm:text-xl text-white">How does the Premium Family plan work?</summary>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    Premium Family is a plan for up to 6 family members who live together. Compared with everyone having their own full-price Premium Individual account, 
+                    it's also cheaper. We will ask for your address to ensure you live at the same address. You can invite members to the plan right after the purchase. Each 
+                    member has their own separate Premium account and can listen at the same time with their own account. All saved music and playlists are their own. 
+                    Other account holders cannot see what you are listening to
+                </p>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    <span class="underline"><a href="family.html">Read more</a></span> info about Premium Family
+                </p>
+            </details>
+
+            <hr class="mx-auto bg-black dark:bg-gray-700 w-full">
+
+            <details class="my-5">
+                <summary class="text-sm font-bold sm:text-xl text-white">How does the Premium Student Plan work?</summary>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    If  you are a student enrolled at an accredited college or university, and above the age of 18, then yes. You can get Premium Student for up to 4 years.
+                </p>
+                <p class="max-w-6xl text-xs sm:text-base mt-4 sm:text-left text-white">
+                    <span class="underline"><a href="student.html">Read more</a></span> info about Premium student.
+                </p>
+            </details>
+
+            <hr class="mx-auto bg-black dark:bg-gray-700 w-full">
+
+            <details class="my-5">
+                <summary class="text-sm font-bold sm:text-xl text-white">How much is Boomify Premium in Nigeria?</summary>
+                <p class="max-w-6xl text-xs sm:text-base ml-7 mt-4 sm:text-left text-white">
+                    The Boomify Premium prices in Nigeria are different depending on which Premium plan you choose: The Boomify Premium Individual plan costs NGN 900 
+                    per month, the Premium Duo plan costs NGN 1,200 per month, the Premium Family plan costs NGN 1,400 per month, the Premium Student plan costs
+                     NGN 450 per month. If you've never had a Premium plan before, you may be eligible for a free (or reduced rate) trial. Country restrictions and terms apply
+                </p>
+            </details>
+        </section>
+
+        <hr class="md:hidden mx-auto bg-black dark:bg-white w-full">
+
+        <section id="features" class="py-6 my-12 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="hidden sm:block font-bold text-center text-4xl mb-5 text-white">Experience the difference</h2>
+            <h2 class="md:hidden text-center text-2xl font-bold px-5 m-3 ml-5 text-white">Experience the difference</h2>
+
+            <p class="hidden sm:block font-semibold text-center text-2xl mb-5 text-white">
+                Go Premium and enjoy full control of your listening. Cancel <br> anytime.
+            </p>
+            <p class="md:hidden text-lg text-center text-white">
+                Go Premium and enjoy full control of your <br> listening. Cancel anytime.
+            </p>
+
+            <ul class="hidden sm:block list-none mx-auto my-5">
+                <div class="flex flex-col items-center">
+                    <li class="gap-16 flex flex-row m-3 ml-7 p-2 mt-8">
+                        <p class="mt-12 font-bold text-base text-white">Features you'll get</p>
+                        <p class="font-bold text-base text-white">Boomify's<br>Free plan</p>
+                        <p class="font-bold text-white">Boomify's<br>Premium<br>plans</p>
+                    </li>
+        
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+        
+                    <li class="flex flex-row gap-20 m-3 my-2">
+                        <p class="underline text-base text-white">Ad-free music listening</p>
+                        <p class="font-bold text-2xl text-slate-400">&#8212;</p>
+                        <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                    </li>
+        
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+        
+                    <li class="flex flex-row gap-20 m-3 my-2">
+                        <p class="underline text-base text-white">Download to listen off-<br>line</p>
+                        <p class="font-bold text-2xl text-slate-400">&#8212;</p>
+                        <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                    </li>
+    
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+    
+                    <li class="flex flex-row gap-20 m-3 my-2">
+                        <p class="underline text-base text-white">Play songs in any ord-<br>-er</p>
+                        <p class="font-bold text-2xl text-slate-400"> &#8212;</p>
+                        <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                    </li>
+        
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+        
+                    <li class="flex flex-row gap-20 m-3 my-2">
+                        <p class="underline text-base text-white">Higher audio qualities</p>
+                        <p class="font-bold text-2xl text-slate-400"> &#8212;</p>
+                        <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                    </li>
+        
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+        
+                    <li class="flex flex-row gap-20 m-3 my-2">
+                        <p class="underline text-base text-white">Listen with friends in r <br> eal time</p>
+                        <p class="font-bold text-2xl text-slate-400"> &#8212;</p>
+                        <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                    </li>
+        
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+        
+                    <li class="flex flex-row gap-20 m-3 my-2 hover:opacity-10 bg-slate-400">
+                        <p class="underline text-base  text-white">Organize listening qu <br> eue</p>
+                        <p class="font-bold text-2xl text-slate-400"> &#8212;</p>
+                        <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                    </li>
+                    
+                    <hr class="mx-auto bg-black dark:bg-white w-1/3">
+                </div>
+            </ul>
+            <!-- Mobile -->
+            <ul class="md:hidden list-none p-1 my-3 flex flex-col">
+                <li class="gap-16 flex flex-row m-3 mt-8">
+                    <p class="text-base mt-8 font-bold text-white">what you'll get</p>
+                    <p class="text-base font-bold text-white">Boomify's<br>Free plan</p>
+                    <p class="text-base font-bold text-white">Boomify's<br>Premium<br>plans</p>
+                </li>
+    
+                <hr class="md:hidden w-full my-2 text-white">
+    
+                <li class="flex flex-row gap-20 m-3">
+                    <p class="text-sm underline text-white">Ad-free music listening</p>
+                    <p class="text-sm font-bold text-slate-400">&#8212;</p>
+                    <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                </li>
+    
+                <hr class="md:hidden w-full my-2 text-white">
+    
+                <li class="flex flex-row gap-20 m-3">
+                    <p class="underline text-sm text-white">Download to listen off-L</p>
+                    <p class="text-xs font-bold text-slate-400">&#8212;</p>
+                    <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                </li>
+
+                <hr class="md:hidden w-full my-2 text-white">
+
+                <li class="flex flex-row gap-20 m-3">
+                    <p class="underline text-sm text-white">Play songs in any order</p>
+                    <p class="text-xs font-bold text-slate-400"> &#8212;</p>
+                    <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                </li>
+    
+                <hr class="md:hidden w-full my-2 text-white">
+    
+                <li class="flex flex-row gap-20 m-3">
+                    <p class="underline text-sm text-white">Higher audio - qualities</p>
+                    <p class="text-xs font-bold text-slate-400"> &#8212;</p>
+                    <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                </li>
+    
+                <hr class="md:hidden w-full my-2 text-white">
+    
+                <li class="flex flex-row gap-20 m-3">
+                    <p class="underline text-sm text-white">Listen with friends in rt</p>
+                    <p class="text-xs font-bold text-slate-400"> &#8212;</p>
+                    <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                </li>
+    
+                <hr class="md:hidden w-full my-2 text-white">
+    
+                <li class="flex flex-row gap-20 m-3 bg-slate-400">
+                    <p class="underline text-sm text-white">Organize listen- queue</p>
+                    <p class="text-xs font-bold text-slate-400"> &#8212;</p>
+                    <img class="h-8 w-8 rounded-full" src="logo/checkmark.png" alt="instagram">
+                </li>
+                
+                <hr class="md:hidden w-full my-2 text-white">
+            </ul>
+
+        </section>
+    </main>
+
+    <hr class="md:hidden w-full my-2 text-white">
+
+    <footer id="footer" class="max-w-full bg-black text-white text-base ">
+        <section class="max-w-full p-4 gap-16 flex flex-col sm:flex-row">
+            <h1 class="hidden sm:block m-3 mt-16 text-3xl font-medium">
+                <a href="#hero" class="flex flex-row">
+                    <img alt="logo3" src="img/logoo.png">
+                    oomify<span class="text-xs">®</span>
+                </a>
+            </h1>
+            <h1 class="md:hidden m-2 mt-5 text-lg font-medium">
+                <a href="#hero" class="flex flex-row">
+                    <img alt="logo3" class="w-3 h-3" src="img/logoo.png">
+                    oomify<span class="text-xs">®</span>
+                </a>
+            </h1>
+
+            <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                <li class="text-sm font-bold text-slate-500 mb-5">COMPANY</li>
+                <li class="mb-5"><a href="#about">About</a></li>
+                <li class="mb-5"><a href="#jobs" class="hover:opacity-90">Jobs</a></li>
+                <li><a href="#about" class="hover:opacity-90">For the Record</a></li>
+            </ul>
+            <ul class="md:hidden flex flex-col mt-5" aria-label="footer">
+                <li class="text-sm font-semibold text-slate-500 mb-5">COMPANY</li>
+                <li class="text-base mb-5"><a href="#about">About</a></li>
+                <li class="text-base mb-5"><a href="#jobs">Jobs</a></li>
+                <li><a href="#about" class="text-base">For the Record</a></li>
+            </ul>
+ 
+            <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                <li class="text-sm font-bold text-slate-500 mb-5">COMMUNITIES</li>
+                <li class="mb-5"><a href="#forartists" class="hover:opacity-90 mb-5">For Artists</a></li>
+                <li class="mb-5"><a href="#developers" class="hover:opacity-90 mb-5">Developers</a></li>
+                <li class="mb-5"><a href="#advertising" class="hover:opacity-90 mb-5">Advertising</a></li>
+                <li class="mb-5"><a href="#investors" class="hover:opacity-90 mb-5">Investors</a></li>
+                <li class="mb-5"><a href="#vendors" class="hover:opacity-90">Vendors</a></li>
+            </ul>
+            <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                <li class="text-sm font-semibold text-slate-500 mb-5">COMMUNITIES</li>
+                <li class="text-base mb-5"><a href="#forartists">For Artists</a></li>
+                <li class="text-base mb-5"><a href="#developers">Developers</a></li>
+                <li class="text-base mb-5"><a href="#advertising">Advertising</a></li>
+                <li class="text-base mb-5"><a href="#investors">Investors</a></li>
+                <li class="text-base mb-5"><a href="#vendors">Vendors</a></li>
+            </ul>
+
+            <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                <li class="text-sm font-bold text-slate-500 mb-5">USEFUL LINKS</li>
+                <li class="mb-5"><a href="support.html">Support</a></li>
+                <li class="mb-5"><a href="#webplayer">Web Player</a></li>
+                <li class="mb-5"><a href="#freemobile">Free Mobile <br> App</a></li>
+            </ul>
+            <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                <li class="text-sm font-semibold text-slate-500 mb-5">USEFUL LINKS</li>
+                <li class="text-base mb-5"><a href="support.html">Support</a></li>
+                <li class="text-base mb-5"><a href="#webplayer">Web Player</a></li>
+                <li class="text-base mb-5"><a href="#freemobile">Free Mobile <br> App</a></li>
+            </ul>
+
+            <ul class="hidden sm:block flex-col mt-16" aria-label="footer">
+                <li class="text-sm font-bold text-slate-500 mb-5">BOOMIFY PLANS</li>
+                <li class="mb-5"><a href="individual.html" class="hover:opacity-90 mb-5">Premium <br> Individual</a></li>
+                <li class="mb-5"><a href="#developers" class="hover:opacity-90 mb-5">Premium Duo</a></li>
+                <li class="mb-5"><a href="family.html" class="hover:opacity-90 mb-5">Premium Family</a></li>
+                <li class="mb-5"><a href="student.html" class="hover:opacity-90 mb-5">Premium <br> Student</a></li>
+                <li class="mb-5"><a href="#vendors" class="hover:opacity-90">Boomify Free</a></li>
+            </ul>
+            <ul class="md:hidden flex-col mt-5" aria-label="footer">
+                <li class="text-sm font-semibold text-slate-500 mb-5">BOOMIFY PLANS</li>
+                <li class="text-base mb-5"><a href="individual.html">Premium <br> Individual</a></li>
+                <li class="text-base mb-5"><a href="#developers">Premium Duo</a></li>
+                <li class="text-base mb-5"><a href="family.html">Premium Family</a></li>
+                <li class="text-base mb-5"><a href="student.html">Premium <br> Student</a></li>
+                <li class="text-base mb-5"><a href="#vendors">Boomify Free</a></li>
+            </ul>
+
+            <div class="hidden sm:block ">
+                <ul class="ml-32 flex flex-row gap-5 sm:gap-4 mt-16">
+                    <li><a href="#instagram"><img class="m-3 h-12 w-12 rounded-full" src="logo/instagramlogo.png" alt="instagram"></a></li>
+                    <li><a href="#twitter"><img class="m-3 h-12 w-12 rounded-full" src="logo/twitterlogo.png" alt="twitter"></a></li>
+                    <li><a href="#facebook"><img class="m-3 h-12 w-12 rounded-full" src="logo/facebooklogo.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+            <div class="md:hidden">
+                <ul class="flex flex-row m-3">
+                    <li><a href="#instagram"><img class="mr-3 h-8 w-8 rounded-full" src="logo/instagramlogo.png" alt="instagram"></a></li>
+                    <li><a href="#twitter"><img class="mr-3 h-8 w-8 rounded-full" src="logo/twitterlogo.png" alt="twitter"></a></li>
+                    <li><a href="#facebook"><img class="mr-3 h-8 w-8 rounded-full" src="logo/facebooklogo.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section class="flex flex-row sm:flex-row max-w-full p-4">
+            <div class="hidden sm:block ">
+                <nav class="flex sm:flex-row gap-8 mb-16 text-xs" aria-label="footer">
+                    <a href="#legal" class="text-slate-500 hover:opacity-90 mt-12">Legal</a>
+                    <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">safety & Privacy Center</a>
+                    <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">Privacy Policy</a>
+                    <a href="#privacy" class="text-slate-500 hover:opacity-90 mt-12">Cookies</a>
+                    <a href="#aboutads" class="text-slate-500 hover:opacity-90 mt-12">About Ads</a>
+                    <a href="#accessibility" class="text-slate-500 hover:opacity-90 mt-12">Accessibility</a>
+                </nav>
+            </div>
+            <nav class="md:hidden mb-3 mt-5 text-xs gap-8" aria-label="footer">
+                <a href="#legal" class="text-xs text-slate-500 mr-3">Legal</a>
+                <a href="#privacy" class="text-slate-500">safety & Privacy Center</a>
+                <br>
+                <br>
+                <a href="#privacy" class="text-slate-500 mr-3">Privacy Policy</a>
+                <a href="#privacy" class="text-slate-500 mr-3 mb-3">Cookies</a>
+                <br>
+                <br>
+                <a href="#aboutads" class="text-slate-500 mr-3">About Ads</a>
+                <a href="#accessibility" class="text-slate-500">Accessibility</a>
+            </nav>
+
+            <div class="hidden sm:block flex-col sm:flex-col ml-64 mb-8">
+                <a href="#accessibility" class="text-slate-500 text-xs ml-64">🌎Nigeria</a>
+                <p class="text-slate-500 text-xs mt-8 ml-64">© 2024 Boomify AB</p>
+            </div>
+
+            <div class="md:hidden ml-32 gap-8">
+                <a href="#accessibility" class="text-slate-500 text-xs">🌎Nigeria</a>
+                <br>
+                <a href="#accessibility" class="text-slate-500 text-xs">©2024BoomifyAB</a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
